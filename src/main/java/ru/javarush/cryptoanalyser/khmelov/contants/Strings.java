@@ -1,4 +1,4 @@
-package ru.javarush.cryptoanaliser.khmelov.contants;
+package ru.javarush.cryptoanalyser.khmelov.contants;
 
 public class Strings {
     private static final String rus = "йцукенгшщзэхъждлорпавыфячсмитьбюё";
@@ -7,3 +7,32 @@ public class Strings {
     private static final String symbols = ",./@'!_-=+';][{}";
     public static final String ALPHABET = rus + eng + cyphers + symbols;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
