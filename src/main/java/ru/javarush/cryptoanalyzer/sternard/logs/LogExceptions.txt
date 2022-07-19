@@ -1,0 +1,14 @@
+14.07.2022 12:20:42 : Action not found
+java.base/java.lang.Enum.valueOf(Enum.java:273)
+ru.javarush.cryptoanalyzer.sternard.application.EActions.valueOf(EActions.java:7)
+ru.javarush.cryptoanalyzer.sternard.controller.Controller.checkParameters(Controller.java:45)
+ru.javarush.cryptoanalyzer.sternard.controller.Controller.run(Controller.java:21)
+ru.javarush.cryptoanalyzer.sternard.Runner.main(Runner.java:8)
+----------------------------------------------------------------------------------------------------
+14.07.2022 19:20:10 : Action not found
+java.base/java.lang.Enum.valueOf(Enum.java:273)
+ru.javarush.cryptoanalyzer.sternard.application.EActions.valueOf(EActions.java:7)
+ru.javarush.cryptoanalyzer.sternard.controller.Controller.checkParameters(Controller.java:44)
+ru.javarush.cryptoanalyzer.sternard.controller.Controller.run(Controller.java:20)
+ru.javarush.cryptoanalyzer.sternard.Runner.main(Runner.java:8)
+----------------------------------------------------------------------------------------------------
