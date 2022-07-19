@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Encoder implements Action{
+    //TODO ---  see decoder
     @Override
     public Result execute(String[] parameters) {
 

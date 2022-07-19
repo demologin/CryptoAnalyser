@@ -14,6 +14,7 @@ import static ru.javarush.cryptoanalyzer.kurchavov.util.InputOutput.writeFile;
 public class BruteForce extends Action{
     @Override
     public void setDefaultParameters() {
+        //TODO Coding. Magic values or methods. Bad reading and understanding
         sourcePathAsString = "encrypted.txt";
         resultPathAsString = "bruteforced.txt";
         necessaryParameters = Map.of(0, "sourcePathAsString",

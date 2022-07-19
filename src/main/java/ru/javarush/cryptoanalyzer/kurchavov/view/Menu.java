@@ -29,6 +29,8 @@ public class Menu {
 
         return args;
     }
+    //TODO Code style. Many warnings. Skip or fix it.
+    //TODO Code style. Long code. Needs to be split into several methods
     public Action initOperation() {
         Action operation = selectOperation();
         AtomicReference<Result> result = new AtomicReference<>();
@@ -112,6 +114,7 @@ public class Menu {
         return scanner.nextLine();
     }
     public String[] enterParameters(String operationName) {
+        //TODO Code style. Long code. Needs to be split into several methods
         Action operation = Actions.valueOf(operationName).getAction();
         AtomicReference<Result> result = new AtomicReference<>();
         Class<? extends Action> currentClass = operation.getClass();

@@ -13,6 +13,7 @@ import java.nio.file.Path;
 import java.util.*;
 
 public class Brute implements Action{
+
     @Override
     public Result execute(String[] parameters){
         String txtFile = parameters[0];
@@ -22,10 +23,12 @@ public class Brute implements Action{
         Path path2 = Path.of(PathFinder.getRoot() + exampleFile);
         String[] exampleFileInStringArray = fileToStringArray(path2);
         try {
+            //TODO Code style. Long code. Needs to be split into several methods
             char[] strings = Files.readAllLines(path).toString().toCharArray();  // массив чаров закодированного файла
             char[] alphabet = Strings.ALPHABET.toCharArray();                    // массив алфавита
             HashMap<Integer,Integer> countOfcoincidence = new HashMap<>();       // список где ключ ето количество слов которые совпали, а значение ето ключ
             for(int key = 1; key < alphabet.length; key++){
+                //TODO Code style. User russain comments? Bad English is much better than the best Russian comments.
                 ArrayList<Character> alphabetList = new ArrayList<>();           // ерейлист алфавита
                 for (char c : alphabet) {
                     alphabetList.add(c);                                         // заполняем ерейлист алфавита
@@ -63,6 +66,7 @@ public class Brute implements Action{
 
 
     private static String[] fileToStringArray (Path filename) {
+        //TODO ---  ????
         List<String> text = new List<>() {
             @Override
             public int size() {

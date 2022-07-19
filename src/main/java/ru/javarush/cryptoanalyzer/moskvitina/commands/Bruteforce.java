@@ -18,7 +18,7 @@ public class Bruteforce implements Action{
 
     @Override
     public Result execute(String[] parameters) {
-
+        //TODO ---  need check parameters before use it
         String txtFile = "".equals(parameters[0]) ? BRUTEFORCED : parameters[0];
         String encodedFile = "".equals(parameters[1]) ? BRUTEFORCED : parameters[1];
         Path readFromFile = Path.of(PathFinder.getRoot() + txtFile);

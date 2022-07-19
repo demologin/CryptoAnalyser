@@ -17,7 +17,7 @@ public class Methods {
         }
         return sb.toString();
     }
-
+    //TODO ---  name? Why 2
     public static String encrypted2(StringBuilder sb, int keyEncrypt, List<String> strings) {
         for (String string : strings) {
             char[] chars = string.toLowerCase().toCharArray();

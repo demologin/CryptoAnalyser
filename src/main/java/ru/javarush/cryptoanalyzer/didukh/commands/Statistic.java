@@ -18,6 +18,7 @@ public class Statistic implements Action{
 
     @Override
     public Result execute(String[] parameters) {
+        //TODO Code style. Long code. Needs to be split into several methods
         String txtFile = parameters[0];
         String encryptFile = parameters[1];
         String exampleFile = parameters[2];

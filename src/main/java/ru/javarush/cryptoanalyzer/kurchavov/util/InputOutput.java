@@ -10,6 +10,8 @@ import java.nio.file.Path;
 import java.util.Scanner;
 
 public class InputOutput {
+    //TODO Coding. Need use OOP here. Many static methods is not best practice. or
+    //TODO Coding. Need use private constructor in static context.
     public static Scanner scanner = new Scanner(System.in);
     public static String getRoot(){
         String root = System.getProperty("user.dir");

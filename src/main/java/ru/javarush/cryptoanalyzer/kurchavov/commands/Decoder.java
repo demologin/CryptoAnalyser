@@ -14,6 +14,7 @@ public class Decoder extends Action {
 
     @Override
     public void setDefaultParameters() {
+
         necessaryParameters = Map.of(0, "sourcePathAsString",
                 1,  "resultPathAsString",
                 2, "key");

@@ -5,6 +5,7 @@ import ru.javarush.cryptoanalyzer.marzhiievskyi.constants.Strings;
 import java.util.Scanner;
 
 public class CL_Interface {
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     public static String[] gettingUserParametersWithCL() {
 
         String[] parameters = new String[4];
@@ -24,6 +25,7 @@ public class CL_Interface {
                 case "1" -> {
                     parameters[0] = "encrypt";
                     System.out.println(Strings.ENTER_INPUT_FILE_TEXT);
+                    //TODO ---  validate??? I can input any text?
                     parameters[1] = console.next();
                     System.out.println(Strings.ENTER_OUT_FILE_NAME);
                     parameters[2] = console.next();

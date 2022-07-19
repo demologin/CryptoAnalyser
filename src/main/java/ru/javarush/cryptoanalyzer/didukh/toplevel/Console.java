@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 public class Console {
     public static String[] commands;
     public static void start(){
+        //TODO Code style. Long code. Needs to be split into several methods
         String[] args = new String[4];
         Scanner scanner = new Scanner(System.in);
         String command;

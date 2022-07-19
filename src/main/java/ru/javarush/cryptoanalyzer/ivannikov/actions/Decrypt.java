@@ -16,6 +16,7 @@ public class Decrypt {
     public static void decrypt() {
         StringBuilder sb = new StringBuilder();
         try (Scanner scanner = new Scanner(System.in)) {
+            //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
             System.out.println("Decryption program started");
             System.out.println("enter the key");
             int keyDecrypt = scanner.nextInt();
@@ -31,6 +32,7 @@ public class Decrypt {
             encrypted(sb, ALPHABET.length() - (keyDecrypt % ALPHABET.length()), strings);
             System.out.print(sb);
             Files.writeString(path, sb);
+            //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
             System.out.println("\n\nThe program completed successfully, your file is located on " + path);
 
         } catch (IOException | InterruptedException e) {

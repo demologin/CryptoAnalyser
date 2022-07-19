@@ -11,6 +11,7 @@ public class FileCharsStat {
     public static Map<Character, Double> of(String fileName) {
         Map<Character, Double> result = new HashMap<>();
         try (FileReader fileReader = new FileReader(fileName)) {
+            //TODO Code style. Many warnings. Skip or fix it.
             int i = -1;
             int count = 0;
             while ((i = fileReader.read()) != -1) {

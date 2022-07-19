@@ -36,6 +36,7 @@ public class Menu {
             System.out.println(MESSAGE_SELECT_MODE);
             String input = scanner.nextLine();
             mode = switch (input) {
+                //TODO Coding. Magic values or methods. Bad reading and understanding
                 case "1" -> 0;
                 case "2" -> 1;
                 case "3" -> 2;

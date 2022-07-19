@@ -30,7 +30,7 @@ public class Decryption extends DecryptingKeyShift implements Action {
             for (Character character : textCharsList) {
                 bufferedWriter.write(decryptingByKeyShift(character, keyShift));
             }
-
+            //TODO Code style. Needs reformat or extraction to methods / variables / constants
             return new Result(ResultCode.OK, "Расшифрование завершено. \nПуть к результату: " + PathFinder.getRoot() + decryptedTextFile);
 
 

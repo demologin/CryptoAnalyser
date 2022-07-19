@@ -13,20 +13,23 @@ import static ru.javarush.cryptoanalyzer.ivannikov.constants.Alphabet.ALPHABET;
 import static ru.javarush.cryptoanalyzer.ivannikov.constants.Methods.encrypted2;
 
 public class BruteForce {
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     public static void bruteForce() {
         System.out.println("this method does not work correctly");
 
         int key = 0;
         StringBuilder sb = new StringBuilder();
+        //TODO Code style. Need always delete code. Not comment it.
         //String decodedFile = "decodedFile.txt";
         String encodeFile = "encodeFile.txt";
         String bruteForceFile = "bruteForceFile.txt";
+        //TODO Code style. Need always delete code. Not comment it.
         //Path path = Path.of(PathFinder.getRoot(), decodedFile);
         Path path1 = Path.of(PathFinder.getRoot(), encodeFile);
         Path path2 = Path.of(PathFinder.getRoot(), bruteForceFile);
-
+        //TODO Code style. Long code. Needs to be split into several methods
         try {
-
+            //TODO Code style. Need always delete code. Not comment it.
             //FileWriter writer = new FileWriter(String.valueOf(path2), false);
 
             List<String> stringsEncodeFile = Files.readAllLines(path1);

@@ -16,7 +16,7 @@ public class Encryptor {
 
     public void init(){
         Scanner sc = new Scanner(System.in);
-
+        //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
         System.out.println("Введите корректный путь файла для чтения: ");
         fileIn = sc.nextLine();
 

@@ -2,6 +2,8 @@ package ru.javarush.cryptoanalyzer.sternard.constant.language;
 
 public class English {
 
+    //TODO Coding. Need use private constructor in static context.
+
     // errors constants
     public static final String WRONG_PARAMETERS = "Wrong parameters";
     public static final String FILE_READING_ERROR = "File reading error";

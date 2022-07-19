@@ -27,7 +27,7 @@ public class Strings {
             ALPHABET_LIST.add(ch);
         }
     }
-
+    //TODO Code style. User russain comments? Bad English is much better than the best Russian comments.
     //Сообщения, которые использует программа
     private static final String EXIT_WORD = ANSI_GREEN + "exit" + ANSI_RESET;
     public static final String WELCOME_MESSAGE = ANSI_BLUE + "\nДобро пожаловать в Шифр Цезаря. Выберете и введите номер команды, " +

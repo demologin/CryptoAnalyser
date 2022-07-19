@@ -14,7 +14,10 @@ import static ru.javarush.cryptoanalyzer.ivannikov.constants.Methods.encrypted;
 public class Encrypt {
     public static void encrypt() {
         StringBuilder sb = new StringBuilder();
+        //TODO SRP. Violating the single responsibility principle of a class.
+        //TODO Strong dependency binding. You need to inject classes through methods or a constructor
         try (Scanner scanner = new Scanner(System.in)) {
+            //TODO Code style. Needs reformat or extraction to methods / variables / constants
             System.out.println("Encryption program started");
             System.out.println("enter the key");
             int keyEncrypt = scanner.nextInt();

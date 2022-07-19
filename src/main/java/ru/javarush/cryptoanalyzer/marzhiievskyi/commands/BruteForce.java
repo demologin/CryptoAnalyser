@@ -14,12 +14,14 @@ import java.util.regex.Pattern;
 public class BruteForce extends DecryptingKeyShift implements Action {
     @Override
     public Result execute(String[] parameters) {
+        //TODO Code style. Long code. Needs to be split into several methods
 
         String inputTextFile = parameters[0];
         String decryptedTextFile = parameters[1];
         int keyShift = 1;
 
         List<Character> encryptedCharsList = new ArrayList<>();
+        //TODO Code style. Needs reformat or extraction to methods / variables / constants
         Result result = new Result(ResultCode.ERROR, "Расшифрование закончено неудачно");
 
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(PathFinder.getRoot() + inputTextFile));

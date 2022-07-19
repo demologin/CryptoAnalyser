@@ -43,8 +43,10 @@ public class Encoder implements Action {
             Files.writeString(writeToFile, result);
 
         } catch (IOException e) {
+            //TODO Coding. Magic values or methods. Bad reading and understanding
             throw new ApplicationException("Файл по пути " + readFromFile + " не найден!", e);
         }
+        //TODO Coding. Magic values or methods. Bad reading and understanding
         return new Result(ResultCode.OK, "Зашифровка удалась.\nФайлик вот тут лежит " + writeToFile);
 
 

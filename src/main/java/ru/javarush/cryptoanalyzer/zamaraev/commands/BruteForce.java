@@ -48,7 +48,7 @@ public class BruteForce implements Action {
     }
 
     private Result bruteForceForSmallText(StringBuilder text, Path pathIn, Path pathOut) {
-
+        //TODO Code style. Long code. Needs to be split into several methods
         try(FileWriter writer = new FileWriter(String.valueOf(pathOut))){
 
             int count = 0;
@@ -155,12 +155,12 @@ public class BruteForce implements Action {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
+        //TODO Code style. Needs reformat or extraction to methods / variables / constants
         return new Result(ResultCode.OK,"The file " + pathIn.getFileName() +
                 " was decrypted using bruteforce, key - " + keyFinal +
                 ", the decrypted text is in the file " + pathOut.getFileName());
     }
-
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     private static String decoderText(String text2,int key) {
         ArrayList<String> list1 = new ArrayList<>(Arrays.asList(text2.split("")));
         StringBuilder stringBuilder1 = new StringBuilder();
@@ -170,6 +170,7 @@ public class BruteForce implements Action {
 
         return stringBuilder1.toString();
     }
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     private static String characterDecoder(String s, int key) {
         for (int i = 0; i < Strings.alphabet.length; i++) {
             if(Strings.alphabet[i].equals(s.toLowerCase())){

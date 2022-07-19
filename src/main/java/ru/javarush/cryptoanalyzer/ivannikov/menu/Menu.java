@@ -3,6 +3,7 @@ package ru.javarush.cryptoanalyzer.ivannikov.menu;
 import static ru.javarush.cryptoanalyzer.ivannikov.logic.Logic.logic;
 
 public class Menu {
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     public static void menu (){
 
         System.out.println("!!!!!!!!!The application is in test mode!!!!!!!!!!");

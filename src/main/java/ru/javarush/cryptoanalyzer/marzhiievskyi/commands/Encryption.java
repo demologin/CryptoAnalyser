@@ -37,7 +37,7 @@ public class Encryption implements Action {
                 char replChar = Strings.ALPHABET_LIST.get(keyValue);
                 bufferedWriter.write(replChar);
             }
-
+            //TODO Code style. Needs reformat or extraction to methods / variables / constants
             return new Result(ResultCode.OK, "Шифрование завершено. \nПуть к результату: " + PathFinder.getRoot() + encryptedTextFile);
 
 

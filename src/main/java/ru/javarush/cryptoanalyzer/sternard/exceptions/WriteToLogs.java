@@ -17,6 +17,7 @@ public class WriteToLogs {
             str.append(txt).append("\n");
         }
         str.append("-".repeat(100)).append("\n");
+        //TODO Code style. Needs reformat. One line - one method
         new ReaderWriter().writer(String.valueOf(getLogExceptionsDirectory().resolve(LOG_FILENAME_EXCEPTIONS)),
                 String.valueOf(str), true);
     }

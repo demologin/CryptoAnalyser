@@ -8,8 +8,10 @@ public class SelectMode {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose the operating mode : \n 1 Encryption \n 2 Decoding \n 3 Brute force \n 4 Static analysis");
         int input = scanner.nextInt();
+        //TODO ---  validate input ?????
         String mode = "";
         if(input == 1){
+            //TODO Coding. Magic values or methods. Bad reading and understanding
             System.out.println("Enter the key :");
             int key = scanner.nextInt();
             mode = "encode text.txt encrypted.txt " + key;

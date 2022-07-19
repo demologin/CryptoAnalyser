@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class CryptoAnalyser {
 
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     private static final Encryptor encryptor = new Encryptor();
     private static final Decryptor decryptor = new Decryptor();
     public static int key;

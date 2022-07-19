@@ -16,6 +16,8 @@ import java.util.stream.Collectors;
 import static ru.javarush.cryptoanalyzer.kurchavov.constants.Strings.ABC;
 
 public abstract class Action{
+    //TODO Code style. Incorrect or unexpected order members / modifiers
+    //TODO Code style. Many warnings. Skip or fix it.
     public Result execute(String[] parameters) throws IOException//input to the method
     {
         Result initResult = null;
@@ -28,6 +30,9 @@ public abstract class Action{
     abstract Result start() throws IOException; //input to the method;
 
     abstract char getCharFromAlphabet(char ch); // may be different in each operation
+
+
+    //TODO ---  state and behaviour in one abstraction? May be need model?
     public abstract void setDefaultParameters(); //setting default args which need to input necessary parameters in console
     private String sourceString;
     private String resultString;
@@ -194,6 +199,8 @@ public abstract class Action{
         }
         return mapTemp;
     }
+
+    //TODO Coding. Magic values or methods. Bad reading and understanding
     HashMap<Character, Double> MapOfStatisticsLetters() { // Statictics of letters from String
         HashMap<Character, Double> temp = new HashMap<>();
         String sourceString = getSourceString().toLowerCase();
@@ -214,7 +221,7 @@ public abstract class Action{
         });
         return temp;
     }
-
+    //TODO Code style. Incorrect or unexpected order members / modifiers
     String replaceCharactersWithMapABC(HashMap<Character, Character> mapCharactersToReplace) {
         String sourceString = getSourceString();
         StringBuilder result = new StringBuilder();

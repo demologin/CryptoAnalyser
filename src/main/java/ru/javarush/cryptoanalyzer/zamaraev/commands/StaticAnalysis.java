@@ -17,6 +17,7 @@ import java.util.TreeMap;
 public class StaticAnalysis implements Action {
     @Override
     public Result execute(String[] parameters) {
+        //TODO Code style. Long code. Needs to be split into several methods
         String encrypted = parameters[0];
         String dict = parameters[1];
         String staticanalysis = parameters[2];

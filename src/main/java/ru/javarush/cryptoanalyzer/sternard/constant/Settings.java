@@ -4,6 +4,7 @@ import java.io.File;
 
 public class Settings {
     private static final char pathSeparator = File.separator.charAt(0);
+    //TODO ---  fix path. I can't refactor package or move it
     private static final String PATH_FROM_ROOT =
             "src/main/java/ru/javarush/cryptoanalyzer/sternard/".replace('/', pathSeparator);
     public static final String TEXT_DIRECTORY = "text";

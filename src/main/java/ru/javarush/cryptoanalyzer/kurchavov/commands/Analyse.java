@@ -12,8 +12,10 @@ import static ru.javarush.cryptoanalyzer.kurchavov.constants.Strings.ABC;
 import static ru.javarush.cryptoanalyzer.kurchavov.util.InputOutput.*;
 
 public class Analyse extends Action{
+    //TODO Code style. Incorrect or unexpected order members / modifiers
     @Override
     public void setDefaultParameters() {
+        //TODO Coding. Magic values or methods. Bad reading and understanding
         necessaryParameters = Map.of(0, "sourcePathAsString",
                 1,  "resultPathAsString",
                 2, "dictPathAsString");
@@ -32,6 +34,7 @@ public class Analyse extends Action{
     @Override
     public Result start(){
         //TODO must remake
+        //TODO Code style. Needs reformat or extraction to methods / variables / constants
         Action dictForComparing = new Analyse();
         dictForComparing.setSourcePath(this.getDictPath());
         try {

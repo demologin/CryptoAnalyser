@@ -10,9 +10,11 @@ import static ru.javarush.cryptoanalyzer.ivannikov.actions.Encrypt.encrypt;
 import static ru.javarush.cryptoanalyzer.ivannikov.actions.StatisticalAnalysis.statisticalAnalysis;
 
 public class Logic {
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     public static void logic() {
         try (Scanner scanner = new Scanner(System.in)) {
             int option = scanner.nextInt();
+            //TODO Coding. Magic values or methods. Bad reading and understanding
             if (option == 1) {
                 encrypt();
             } else if (option == 2) {

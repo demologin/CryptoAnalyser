@@ -12,7 +12,7 @@ public class Runner {
         MainController mainController = new MainController();
 
         Application application = new Application(mainController);
-
+        //TODO Code style. Many warnings. Skip or fix it.
         Result result = application.run(new SelectMode().parameters);
         System.out.println(result);
     }

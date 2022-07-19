@@ -6,6 +6,7 @@ import ru.javarush.cryptoanalyzer.marzhiievskyi.entity.Result;
 import java.util.Arrays;
 
 public class AppOfCommands {
+    //TODO ---  packagename is a bomb
     private final MainController mainController;
 
     public AppOfCommands(MainController mainController) {

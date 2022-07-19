@@ -17,6 +17,7 @@ import java.util.Arrays;
 public class Decoder implements Action{
     @Override
     public Result execute(String[] parameters) {
+        //TODO Code style. Long code. Needs to be split into several methods
         String encrypted = parameters[0];
         String decryptedFile = parameters[1];
         Path pathIn = Path.of(PathFinder.getRoot() + encrypted);
@@ -53,6 +54,7 @@ public class Decoder implements Action{
                 " was decrypted using decoder " +
                 ", the decrypted text is in the file " + pathOut.getFileName());
     }
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     private static String decoderText(String text2,int key) {
         ArrayList<String> list1 = new ArrayList<>(Arrays.asList(text2.split("")));
         StringBuilder stringBuilder1 = new StringBuilder();
@@ -62,6 +64,8 @@ public class Decoder implements Action{
 
         return stringBuilder1.toString();
     }
+
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     private static String characterDecoder(String s, int key) {
         for (int i = 0; i < Strings.alphabet.length; i++) {
             if(Strings.alphabet[i].equals(s.toLowerCase())){
@@ -72,6 +76,7 @@ public class Decoder implements Action{
                 }
             }
         }
+        //TODO ---  ???? null ????
         return null;
     }
 }
