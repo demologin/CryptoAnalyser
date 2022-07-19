@@ -27,7 +27,7 @@ public class Resources {
         }
     }
 
-    //TODO Code style. User russain comments? Bad English is much better than the best Russian comments.
+    //TODO Code style. User russian comments? Bad English is much better than the best Russian comments.
     public static String getTextDecrypt() { // получить расшифрованный текст
         try {
             if (Files.exists(Constants.getOriginalText())) {

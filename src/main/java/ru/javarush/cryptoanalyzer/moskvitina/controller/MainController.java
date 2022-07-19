@@ -11,7 +11,7 @@ public class MainController {
             Action action = Actions.find(command);
             return action.execute(parameters);
         } catch (ApplicationException e) {
-            //TODO Code style. User russain comments? Bad English is much better than the best Russian comments.
+            //TODO Code style. User russian comments? Bad English is much better than the best Russian comments.
             //TODO логировать исключения
             return  new Result(ResultCode.ERROR, e.getMessage());
         }

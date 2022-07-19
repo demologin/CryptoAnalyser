@@ -29,6 +29,7 @@ public class Encrypt implements Action {
 				int index = ALPHABET.indexOf(strings.charAt(Integer.parseInt(String.valueOf(i))));
 				int newIndex = (ALPHABET.length() + index + key) % ALPHABET.length();
 				char replaceChar = ALPHABET.charAt(newIndex);
+				//TODO Code style. Many warnings. Skip or fix it.
 				encrypted += replaceChar;
 			}
 			Path path2 = Path.of(PathFinder.getRoot() + encryptedFile);
@@ -37,7 +38,7 @@ public class Encrypt implements Action {
 		} catch (IOException e) {
 			throw new AppException("Not found", e);
 		}
-		
+		//TODO Coding. Magic values or methods. Bad reading and understanding
 		return new Result(ResultCode.OK, "all bytes read" + path);
 	}
 }

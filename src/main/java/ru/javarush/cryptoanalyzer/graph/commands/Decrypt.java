@@ -31,15 +31,17 @@ public class Decrypt implements Action {
 					newIndex = Constants.ALPHABET.length() + newIndex;
 				}
 				char replaceChar = Constants.ALPHABET.charAt(newIndex);
+				//TODO Code style. Many warnings. Skip or fix it.
 				decrypted += replaceChar;
 			}
+			//TODO ---	name???
 			Path path2 = Path.of(PathFinder.getRoot() + decryptedFile);
 			Files.write(Paths.get(String.valueOf(path2)), decrypted.getBytes());
 			
 		} catch (IOException e) {
 			throw new AppException("Not found", e);
 		}
-		
+		//TODO Coding. Magic values or methods. Bad reading and understanding
 		return new Result(ResultCode.OK, "all bytes read" + path);
 	}
 }

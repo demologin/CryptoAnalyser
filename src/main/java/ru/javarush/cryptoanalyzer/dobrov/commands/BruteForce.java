@@ -11,6 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class BruteForce implements Action {
+    //TODO Code style. Incorrect or unexpected order members / modifiers
     String alphabet = Strings.ALPHABET;
 
     StringBuilder builder = new StringBuilder();
@@ -19,7 +20,7 @@ public class BruteForce implements Action {
 
     @Override
     public Result execute(int key) {
-
+        //TODO Code style. Long code. Needs to be split into several methods
 
         String path = PathFinder.getRoot() + "encrypt.txt";
         String tempPath = PathFinder.getRoot() + "temp.txt";

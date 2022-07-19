@@ -32,6 +32,7 @@ public class BruteForce implements Action {
 						newIndex = Constants.ALPHABET.length() + newIndex;
 					}
 					char replaceChar = Constants.ALPHABET.charAt(newIndex);
+					//TODO Code style. Many warnings. Skip or fix it.
 					decrypted += replaceChar;
 				}
 				

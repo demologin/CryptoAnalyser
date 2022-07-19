@@ -6,6 +6,8 @@ import java.nio.file.Path;
 
 public class CreateResultFile {
 
+    //TODO Coding. Need use private constructor in static context.
+
     public static void createFileWithResult(Path filePath, String action, StringBuilder newText){
         String newFileNameWithFullPath = getNewFileName(filePath, action);
         Path newFilePath = Path.of(newFileNameWithFullPath);
@@ -22,8 +24,10 @@ public class CreateResultFile {
             String textForNewFile = String.valueOf(newText);
             Files.writeString(newFilePath, textForNewFile);
             if(!fileIsExist){
+                //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
                 System.out.printf("Все готово! Результат работы находится в файле: %s%n", newFileNameWithFullPath);
             } else {
+                //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
                 System.out.printf("Все готово! Результат работы находится в файле: %s%n" +
                                 "Во время своей работы я подставил в имя название выбранной опции, как оказалось, " +
                                 "у вас уже был такой файл.%nЯ удалил старый и заменил его новым (уж извините, если не надо было).%n",

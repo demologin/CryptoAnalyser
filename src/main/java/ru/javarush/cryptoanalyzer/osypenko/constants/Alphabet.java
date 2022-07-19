@@ -1,6 +1,7 @@
 package ru.javarush.cryptoanalyzer.osypenko.constants;
 
 public class Alphabet {
+    //TODO Coding. Need use private constructor in static context.
     private static final String RU = "йцукенгшщзхъфывапролджэячсмитьбю";
     private static final String EN = "qwertyuiopasdfghjklzxcvbnm";
     private static final String CH = "!?.,:;'-–+=*«„“»{}[]()/\\\" ";

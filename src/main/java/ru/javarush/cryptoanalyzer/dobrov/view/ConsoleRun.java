@@ -9,6 +9,7 @@ public class ConsoleRun {
     private String command;
   private int key;
     public void runConsole() {
+        //TODO Coding. Magic values or methods. Bad reading and understanding
         Scanner scanner = new Scanner(System.in);
         int firstChoice;
 

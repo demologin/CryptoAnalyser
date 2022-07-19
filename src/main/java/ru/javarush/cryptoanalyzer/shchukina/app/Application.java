@@ -56,21 +56,21 @@ public class Application {
     private Result encrypt() {
         System.out.println(ENCRYPT_MESSAGE);
         String[] parameters = getParameters(3);
-
+        //TODO Coding. Magic values or methods. Bad reading and understanding
         return mainController.execute("ENCRYPT", parameters);
     }
 
     private Result decrypt() {
         System.out.println(DECRYPT_MESSAGE);
         String[] parameters = getParameters(3);
-
+        //TODO Coding. Magic values or methods. Bad reading and understanding
         return mainController.execute("DECRYPT", parameters);
     }
 
     private Result bruteForceHack() {
         System.out.println(BRUTE_FORCE_MESSAGE);
         String[] parameters = getParameters(2);
-
+        //TODO Coding. Magic values or methods. Bad reading and understanding
         return mainController.execute("DECRYPT_BY_BRUTE_FORCE", parameters);
     }
 

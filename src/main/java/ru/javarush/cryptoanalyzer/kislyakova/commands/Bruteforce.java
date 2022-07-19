@@ -46,6 +46,7 @@ public class Bruteforce implements Action {
         return probableOffset(chiSquares(text));
     }
 
+    //TODO Code style. User russian comments? Bad English is much better than the best Russian comments.    
     //Создание массива, который будет содержать вычисленные Хи-квадраты для каждого смещения от 0 до 32
     //используем каждое смещение, а затем считаем буквы в этом сообщении
     //метод ChiSquareTest (из maven) для вычисления Хи-квадрата между ожидаемым и наблюдаемым распределением букв

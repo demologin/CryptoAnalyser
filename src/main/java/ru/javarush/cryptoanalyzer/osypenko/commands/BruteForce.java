@@ -14,7 +14,9 @@ import java.nio.file.Path;
 
 public class BruteForce {
     public static void bruteForce() {
+        //TODO Code style. Long code. Needs to be split into several methods
         try {
+            //TODO Code style. Many warnings. Skip or fix it.
             while (true) {
                 System.out.println(ConstantText.ENTERTHEADDRESS);
                 String scanRes = Scan.scan().nextLine();
@@ -33,12 +35,14 @@ public class BruteForce {
                 }
 
                 if (Files.exists(inPath)) {
+                    //TODO Coding. Magic values or methods. Bad reading and understanding
                     String[] keyWord = new String[]{"может", "нет", "как", "или", "все", "это", "вам", "вас", "что"};
                     int key = 0;
                     boolean flag = true;
 
                     while (key < Alphabet.fullAlphabet.length) {
                         FileInputStream fis1 = new FileInputStream(String.valueOf(inPath));
+                        //TODO Code style. 1???? What is meaning
                         Reader reader1 = new InputStreamReader(fis1);
                         BufferedReader bufferedReader1 = new BufferedReader(reader1);
                         Writer writer1 = new FileWriter(inPath.getParent() + File.separator + ConstantText.BRUTEFORCENAMEFILE);
@@ -64,7 +68,7 @@ public class BruteForce {
                         reader1.close();
                         bufferedReader1.close();
                         writer1.close();
-
+                        //TODO Code style. Long code. Needs to be split into several methods
                         FileInputStream fis2 = new FileInputStream(String.valueOf(Path.of(PathFinder.getRoot() + ConstantText.BRUTEFORCENAMEFILE)));
                         Reader reader2 = new InputStreamReader(fis2);
                         BufferedReader bufferedReader2 = new BufferedReader(reader2);

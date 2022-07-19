@@ -21,13 +21,14 @@ import static java.lang.Character.toLowerCase;
 //src/chisquare/commons-math3-3.6.1/commons-math3-3.6.1.jar
 public class Main {
 
+    //TODO Coding. Magic values or methods. Bad reading and understanding
     private static final String ALPHABET = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяabcdefghijklmnoprstuvwxz,./@'!_-=+;][{}1234567890 ";
     public static String inputFile = "input.txt";
     public static String encryptFile = "encrypt.txt";
     public static String decryptFile = "decrypt.txt";
     public static String dictionary = "dictionary.txt";
 
-
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     public static void main(String[] args) throws IOException {
 
         new FileWriter(decryptFile).close();

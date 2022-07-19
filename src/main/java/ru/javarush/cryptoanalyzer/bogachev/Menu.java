@@ -19,6 +19,7 @@ public class Menu {
 
     public Menu() {
         entries.add(new MenuEntry("Encryption") {
+            //TODO ---  anno class? Why?
             @Override
             public void run() {
                 Scanner scanner = new Scanner(System.in);
@@ -152,6 +153,7 @@ public class Menu {
                     Main.writeToFile(Main.decryptFile, stringBuilder.toString());
                     System.out.println("Default decrypt file in project directory: decrypt.txt \n");
                 } catch (IOException e) {
+                    //TODO Coding. Magic values or methods. Bad reading and understanding
                     Main.dictionary = "dictionary.txt";
                     Main.encryptFile = "encrypt.txt";
                     System.out.println("\nPlease use correct file name\n");

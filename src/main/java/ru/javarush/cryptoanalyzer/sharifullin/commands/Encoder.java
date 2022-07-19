@@ -15,6 +15,7 @@ import static ru.javarush.cryptoanalyzer.sharifullin.costants.Strings.ALPHABET;
 public class Encoder implements Action {
     @Override
     public Result execute(String[] parameters) {
+
         String txtFile = parameters[0];
         String encryptedFile = parameters[1];
         int code = Integer.parseInt(parameters[2]);

@@ -14,6 +14,7 @@ import static ru.javarush.cryptoanalyzer.sharifullin.costants.Strings.ALPHABET;
 public class Decoder implements Action {
     @Override
     public Result execute(String[] parameters) {
+        //TODO Code style. Long code. Needs to be split into several methods
         String fileToDec = parameters[0];
         String decodedFile = parameters[1];
         int code = Integer.parseInt(parameters[2]);

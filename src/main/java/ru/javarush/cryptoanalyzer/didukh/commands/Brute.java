@@ -28,7 +28,7 @@ public class Brute implements Action{
             char[] alphabet = Strings.ALPHABET.toCharArray();                    // массив алфавита
             HashMap<Integer,Integer> countOfcoincidence = new HashMap<>();       // список где ключ ето количество слов которые совпали, а значение ето ключ
             for(int key = 1; key < alphabet.length; key++){
-                //TODO Code style. User russain comments? Bad English is much better than the best Russian comments.
+                //TODO Code style. User russian comments? Bad English is much better than the best Russian comments.
                 ArrayList<Character> alphabetList = new ArrayList<>();           // ерейлист алфавита
                 for (char c : alphabet) {
                     alphabetList.add(c);                                         // заполняем ерейлист алфавита

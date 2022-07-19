@@ -28,6 +28,7 @@ public class Cipher implements Action{
         return new Result(ResultCode.OK, "Cipher");
     }
 
+    //TODO Code style. Incorrect or unexpected order members / modifiers
     protected StringBuilder cipher(String text, int key) {
         StringBuilder result = new StringBuilder();
         for (char character : text.toCharArray()) {

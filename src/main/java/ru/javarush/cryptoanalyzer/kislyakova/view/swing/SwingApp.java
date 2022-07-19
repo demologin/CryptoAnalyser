@@ -14,6 +14,7 @@ public class SwingApp extends JFrame {
         //TODO свинг доделать
         panel = new JPanel();
         add(panel);
+        //TODO Code style. User russian comments? Bad English is much better than the best Russian comments.    
         //поставить размеры окна
         setSize(600, 400);
         setLocationRelativeTo(null);

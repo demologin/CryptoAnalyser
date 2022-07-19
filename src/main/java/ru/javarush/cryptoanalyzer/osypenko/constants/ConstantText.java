@@ -1,6 +1,7 @@
 package ru.javarush.cryptoanalyzer.osypenko.constants;
 
 public class ConstantText {
+    //TODO Coding. Need use private constructor in static context.
     public static final String ENTERTHEADDRESS = "Укажите путь к файлу или нажмите Enter для получения доступа к корневому файлу";
     public static final String GOODBYE = "До скорой встречи";
     public static final String NOTENTEREDCORRECTY = "По данному адресу файл не найден. Введите еще раз!";

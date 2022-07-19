@@ -14,7 +14,7 @@ public class Encoder implements Action {
     public Result execute(int key) {
 
         String alphabet = Strings.ALPHABET;
-
+        //TODO Coding. Magic values or methods. Bad reading and understanding
         String path = PathFinder.getRoot() + "text.txt";
         String encryptPath = PathFinder.getRoot() + "encrypt.txt";
 

@@ -3,7 +3,7 @@ package ru.javarush.cryptoanalyzer.shchukina.constant;
 import static ru.javarush.cryptoanalyzer.shchukina.constant.Colours.*;
 
 public class Messages {
-
+    //TODO Coding. Need use private constructor in static context.
     public static final String INSTRUCTIONS = PURPLE_BOLD + "Choose action, enter:\n" + ANSI_RESET +
             "\t 0 - To print instructions.\n" +
             "\t 1 - To encrypt data.\n" +

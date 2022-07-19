@@ -23,8 +23,9 @@ public class QuestionStart {
         System.out.println("-".repeat(80));
         questionRun();
     }
-
+    //TODO Coding. Need use OOP here. Many static methods is not best practice.
     public static void questionRun() {
+        //TODO Code style. Long code. Needs to be split into several methods
         while (true) {
             String numberFunction = Scan.scan().next();
             if (numberFunction.equals("1")) {
@@ -32,14 +33,17 @@ public class QuestionStart {
                 Encrypt.encrypt();
                 break;
             } else if (numberFunction.equals("2")) {
+                //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
                 System.out.println("Вы выбрали Дешифрование текста");
                 Decrypt.decrypt();
                 break;
             } else if (numberFunction.equals("3")) {
+                //TODO Coding. Magic values or methods. Bad reading and understanding
                 System.out.println("Вы выбрали Расшифровка текста с помощью brute force (перебор всех вариантов)");
                 BruteForce.bruteForce();
                 break;
             } else if (numberFunction.equals("4")) {
+                //TODO Coding. Magic values or methods. Bad reading and understanding
                 System.err.println("Извините но данная функция находится в разработке");
                 Analyze.analyze();
                 break;

@@ -74,11 +74,14 @@ public class Encrypt {
                     reader.close();
                     bufferedReader.close();
                     writer.close();
+                    //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
                     System.out.println("Выполнено! \nСоздан файл " + ConstantText.ENCRYPTNAMEFILE + " по адресу " + inPath.getParent() + File.separator);
 
                     QuestionExit.questionExit();
                 } else if (Files.isDirectory(inPath) || !Files.exists(inPath)) {
+                    //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
                     System.err.println(ConstantText.NOTENTEREDCORRECTY);
+                    //TODO ---  ?????????????????
                     Encrypt.encrypt();
                 }
                 break;

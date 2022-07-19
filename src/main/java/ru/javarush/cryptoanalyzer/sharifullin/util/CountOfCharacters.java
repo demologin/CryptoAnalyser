@@ -12,10 +12,12 @@ import java.util.stream.Collectors;
 import static ru.javarush.cryptoanalyzer.sharifullin.costants.Strings.ALPHABET;
 
 public class CountOfCharacters {
-
+    //TODO Code style. Incorrect or unexpected order members / modifiers
     char[] ALPHA = ALPHABET.toCharArray();
-    public Map<Character, Integer> countOfChar(Path path) {
 
+
+    public Map<Character, Integer> countOfChar(Path path) {
+        //TODO Code style. Long code. Needs to be split into several methods
         HashMap<Character, Integer> qwe = new HashMap<>();
 
         String read;
@@ -25,7 +27,7 @@ public class CountOfCharacters {
             try {
                 read = Files.readString(path);
                 char[] tt = read.toCharArray();
-
+                //TODO Code style. Many warnings. Skip or fix it.
                 for (int i = 0; i < ALPHA.length; i++) {
                     int count = 0;
                     for (int j = 0; j < tt.length; j++) {

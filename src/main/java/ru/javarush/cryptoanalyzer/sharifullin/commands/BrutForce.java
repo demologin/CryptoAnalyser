@@ -16,12 +16,14 @@ import static ru.javarush.cryptoanalyzer.sharifullin.costants.Strings.ALPHABET;
 public class BrutForce implements Action {
     @Override
     public Result execute(String[] parameters) {
+        //TODO Code style. Long code. Needs to be split into several methods
         String encodedFile = parameters[0];
         String decodedFile = parameters[1];
         Path pathRead = Path.of(PathFinder.getRoot() + encodedFile);
         Path pathWrite = Path.of(PathFinder.getRoot() + decodedFile);
         int code = 0;
         boolean encoded = false;
+        //TODO Code style. Many warnings. Skip or fix it.
         while (encoded == false) {
             try {
                 String read = Files.readString(pathRead);
@@ -36,6 +38,7 @@ public class BrutForce implements Action {
                     char value = ALPHABET.charAt(deVal);
                     write.append(value);
                 }
+                //TODO Code style. Many warnings. Skip or fix it.
                 if(stringIsDecoded(write.toString())==true){
                     Files.writeString(pathWrite, write.toString());
                     encoded=true;

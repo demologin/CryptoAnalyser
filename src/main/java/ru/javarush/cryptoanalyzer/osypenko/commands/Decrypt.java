@@ -16,6 +16,7 @@ public class Decrypt {
     public static void decrypt() {
         try {
             while (true) {
+                //TODO ---  copy encrypt
                 System.out.println(ConstantText.ENTERTHEADDRESS);
                 String scanRes = Scan.scan().nextLine();
                 Path inPath;
