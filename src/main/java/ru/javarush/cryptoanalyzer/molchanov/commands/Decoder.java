@@ -22,10 +22,12 @@ public class Decoder implements Action{
         Path pathOut = Path.of(PathFinder.getRoot() + encryptedFile);
         List<String> lines;
         int cryptoKey = 0;
+        //TODO Code style. Needs reformat or extraction to methods / variables / constants
         try {
             cryptoKey = Integer.parseInt(parameters[2]);
             System.out.println(cryptoKey);
         } catch (NumberFormatException e){
+            //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
             System.out.println("Invalid cryptoKey format");
         }
 

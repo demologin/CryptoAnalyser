@@ -25,6 +25,7 @@ public class Encoder implements Action{
             cryptoKey = Integer.parseInt(parameters[2]);
             System.out.println(cryptoKey);
         } catch (NumberFormatException e){
+            //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
             System.out.println("Invalid cryptoKey format");
         }
 
@@ -40,6 +41,7 @@ public class Encoder implements Action{
         try {
             Files.writeString(pathOut, String.copyValueOf(textInChar));
         } catch (IOException e) {
+            //TODO Coding. We see console (System.out.print) here. Need move the output to View layer
             System.out.println("Writing to file failed");
         }
 

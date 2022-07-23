@@ -39,6 +39,7 @@ public class BruteForce implements Action{
         return new Result(ResultCode.OK, "Text was decoded" + pathOut);
     }
 
+    //TODO Code style. Incorrect or unexpected order members / modifiers
     protected static int KeyDecoding (char[] allSymbols){
         int maxCountOfCont = 0;
         int bestKey = 0;

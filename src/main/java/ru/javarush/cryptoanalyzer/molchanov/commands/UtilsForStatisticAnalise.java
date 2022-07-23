@@ -30,8 +30,11 @@ public class UtilsForStatisticAnalise {
                 targetEntry = ent;
             }
         }
+        //TODO Code style. Many warnings. Skip or fix it.
         return targetEntry.getKey();
     }
+
+    //TODO ---  name1 ?????
     public static String statDecoderIt1 (char[] encodedText, HashMap<Character, Double> encodStat, HashMap<Character, Double> analiseStat){
         char[] copyOfEncodedText = Arrays.copyOf(encodedText, encodedText.length);
         int step = 0;
