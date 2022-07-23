@@ -30,7 +30,7 @@ public class EncryptLogic {
         System.out.println("Encryption is finished!!!");
     }
 
-    //TODO Code style. User russain comments? Bad English is much better than the best Russian comments.
+    //TODO Code style. Use Russian comments? Bad English is much better than the best Russian comments.
 //    дешифровка
 
     //TODO Coding. Need use OOP here. Many static methods is not best practice.

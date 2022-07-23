@@ -27,6 +27,7 @@ public class CharReplacer {
                 writer.write(firstChar);
             }
         }
+        //TODO ---  try-with-res ???
         writer.flush();
         writer.close();
         reader.close();

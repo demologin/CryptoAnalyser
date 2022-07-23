@@ -63,11 +63,11 @@ public class Analyze extends AbstractAction {
             throw new AppException(e.getMessage(), e);
         }
 
-        return Collections.unmodifiableList(map.entrySet()
+        return map.entrySet()
                 .stream()
                 .sorted(Comparator.comparingInt(Map.Entry::getValue))
                 .map(Map.Entry::getKey)
-                .toList());
+                .toList();
     }
 
     private Map<Character, Integer> createStartMap() {

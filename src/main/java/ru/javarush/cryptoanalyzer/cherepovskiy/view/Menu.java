@@ -19,7 +19,7 @@ public class Menu {
         }catch (NumberFormatException e) {
             throw new AppException("Not a number please try again");
         }
-        //TODO Code style. User russain comments? Bad English is much better than the best Russian comments.
+        //TODO Code style. Use Russian comments? Bad English is much better than the best Russian comments.
 // меню, по хорошему вынести все строки в интерфейс Const
         //TODO Code style. Needs reformat or extraction to methods / variables / constants
         switch (choice) {
