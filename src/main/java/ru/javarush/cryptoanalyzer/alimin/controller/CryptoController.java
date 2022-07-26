@@ -11,7 +11,7 @@ public class CryptoController {
 
     //TODO Strong dependency binding. You need to inject classes through methods or a constructor
     private final Scanner scanner = new Scanner(System.in);
-    private final Cryptoanalyzer cryptoanalyser = new Cryptoanalyzer();
+    private final Cryptoanalyzer cryptoanalyzer = new Cryptoanalyzer();
 
     public void run() {
         //TODO Code style. Long code. Needs to be split into several methods
@@ -53,7 +53,7 @@ public class CryptoController {
                                         if (key.equals("q")) {
                                             break;
                                         }
-                                        cryptoanalyser.encrypt(path, Integer.parseInt(key));
+                                        cryptoanalyzer.encrypt(path, Integer.parseInt(key));
                                         System.out.println("Файл успешно зашифрован");
                                     } catch (NumberFormatException e) {
                                         System.out.println("Вы ввели недопустимое значение для ключа шифрования, пожалуйста введите любое неотрицательное целочисленное значение");
@@ -76,7 +76,7 @@ public class CryptoController {
                                     if (key.equals("q")) {
                                         break;
                                     }
-                                    cryptoanalyser.decrypt(path, Integer.parseInt(key));
+                                    cryptoanalyzer.decrypt(path, Integer.parseInt(key));
                                     System.out.println("Файл успешно расшифрован");
                                 }
                             }
@@ -106,7 +106,7 @@ public class CryptoController {
                                     break;
                                 }
                                 path = Path.of(choice);
-                                cryptoanalyser.bruteForceHack(path);
+                                cryptoanalyzer.bruteForceHack(path);
                                 System.out.println();
                             }
 
@@ -117,7 +117,7 @@ public class CryptoController {
                                     break;
                                 }
                                 path = Path.of(choice);
-                                cryptoanalyser.frequencyHack(path);
+                                cryptoanalyzer.frequencyHack(path);
                                 System.out.println();
                             }
 
@@ -134,7 +134,7 @@ public class CryptoController {
                                     break;
                                 }
                                 path = Path.of(choice);
-                                cryptoanalyser.statisticalAnalysisHack(exampleTextPath, path);
+                                cryptoanalyzer.statisticalAnalysisHack(exampleTextPath, path);
                                 System.out.println();
                             }
 
@@ -145,7 +145,7 @@ public class CryptoController {
                                     break;
                                 }
                                 path = Path.of(choice);
-                                cryptoanalyser.printAllPossibleOptions(path);
+                                cryptoanalyzer.printAllPossibleOptions(path);
                                 System.out.println();
                             }
                         }
