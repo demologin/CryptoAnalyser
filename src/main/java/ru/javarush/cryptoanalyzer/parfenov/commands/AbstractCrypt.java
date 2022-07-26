@@ -7,7 +7,9 @@ import ru.javarush.cryptoanalyzer.parfenov.exception.ApplicationException;
 import java.io.*;
 import java.nio.file.Path;
 
-public abstract class AbstractCrypt {//здесь еще можно было попробовать объединить поведение brute и statistics, но не успел
+public abstract class AbstractCrypt {
+    //TODO Code style. User russain comments? Bad English is much better than the best Russian comments.
+    //здесь еще можно было попробовать объединить поведение brute и statistics, но не успел
     public Result getResult(Path in, Path out, int key, String alphabet, boolean toLower) {
         try (BufferedReader reader = new BufferedReader(new FileReader(in.toFile()));
              BufferedWriter writer = new BufferedWriter(new FileWriter(out.toFile()))) {

@@ -6,6 +6,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SpellChecker {
+
+    //TODO Coding. Need use private constructor in static context.
     public static int getAmountOfErrorsInProbe(StringBuilder probe) {
         int result = 0;
         for (String regex : Patterns.regexBruteList) {
